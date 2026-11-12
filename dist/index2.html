@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/src/assets/original/monkey.jpg">
+    <style>
+        /* html {
+            scroll-behavior: smooth;
+        } */
+
+        .section-screen {
+            min-height: 100vh;
+            scroll-margin-top: 0;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <header class="fixed top-0 left-0 z-50 w-full transition-all">
+        <div
+            class="navbar  bg-base-300 glass shadow-lg w-full lg:max-w-5xl lg:mx-auto lg:rounded-full mt-5 px-6 py-3 flex justify-between items-center">
+            <div class="navbar-start">
+                <a href="#home"
+                    class="relative text-base font-medium py-1 group hover:bg-transparent focus:bg-transparent">
+                    OU VIREKREACH
+                    <!-- Sliding line -->
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <ul class="menu menu-horizontal p-1 gap-6">
+                    <li>
+                        <a href="#home"
+                            class="relative text-base font-medium py-1 group hover:bg-transparent focus:bg-transparent">
+                            Home
+                            <!-- Sliding line -->
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="relative text-base font-medium py-1 group hover:bg-transparent focus:bg-transparent">
+                            About Me
+                            <!-- Sliding line -->
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience"
+                            class="relative text-base font-medium py-1 group hover:bg-transparent focus:bg-transparent">
+                            Experience
+                            <!-- Sliding line -->
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="aura aura-gold rounded-4xl">
+                            <div class="card bg-base-100 rounded-4xl">
+                                <a class="btn rounded-4xl" href="#about">Contact Me</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="h-screen w-full bg-[#F8F6F0] flex items-center justify-center">
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col lg:flex-row mt-16">
+                    <img alt="Tailwind CSS hero component" src="../src/assets/original/Reach.png"
+                        class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Hi, I'm Reach!</h1>
+                        <p class="py-6">
+                            Welcome to my digital workspace! I'm a passionate full-stack web developer dedicated to
+                            building robust,
+                            high-performance web applications and seamless user experiences from the ground up. Whether
+                            I'm architecting
+                            scalable back-end services, designing responsive front-end interfaces, or bringing creative
+                            concepts to life
+                            with clean and efficient code, I turn complex challenges into intuitive digital solutions.
+                            Explore my work,
+                            discover my projects, and let's build something exceptional together.
+                        </p>
+                        <!-- <button class="btn btn-primary">Get Started</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about"
+            class="min-h-screen w-full bg-[#1A1817] flex flex-col justify-between py-24 px-4 lg:px-12 text-white">
+
+            <div class="max-w-5xl w-full mx-auto space-y-12">
+
+                <!-- TOP PART: Image (Left) + Content (Right) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+                    <!-- Left Column: Profile Picture with Background Card Effect -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div
+                            class="relative w-72 h-80 lg:w-80 lg:h-96 rounded-2xl bg-[#26221F] border border-[#3D352E] overflow-hidden shadow-2xl flex items-center justify-center p-2">
+                            <img src="../src/assets/original/Reach.png" alt="Profile"
+                                class="w-full h-full object-cover rounded-xl">
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Text & Information -->
+                    <div class="lg:col-span-7 space-y-4 text-left">
+                        <span class="text-[#C5A880] text-xs font-semibold tracking-widest uppercase">ABOUT ME</span>
+
+                        <h2 class="text-3xl lg:text-4xl font-bold text-white leading-tight">
+                            Hi, I am <span class="text-[#C5A880]">Virek Reach</span> — Web & Mobile Developer
+                        </h2>
+
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            I am a third-year software engineering student based in Phnom Penh. I specialize in
+                            cross-platform mobile
+                            app development with Flutter, clean backend architecture, and building responsive
+                            single-page web
+                            applications.
+                        </p>
+
+                        <!-- Bullet Points Grid (2 Columns) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-300 pt-2">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Web App Development</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Frontend & UI Design</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Cisco CCNA Networking</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Python & Backend Logic</span>
+                            </div>
+                        </div>
+
+                        <!-- Download Button + Signature -->
+                        <div class="flex flex-wrap items-center gap-6 pt-4">
+                            <a href="#"
+                                class="btn bg-[#9E6F42] hover:bg-[#835B35] text-white border-none px-6 rounded-lg font-medium shadow-md">
+                                CV Download
+                            </a>
+                            <img src="/src/assets/original/monkey.jpg" alt="Logo" class="w-12 h-12 rounded-2xl">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM PART: Contact Box Card (Matches image layout) -->
+                <div class="border border-[#C5A880]/30 bg-[#26221F]/60 rounded-xl p-6 lg:p-8 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+
+                        <!-- Column 1: Contact Now -->
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-bold text-[#C5A880] tracking-wider uppercase">CONTACT NOW
+                            </h4>
+                            <div class="flex items-center gap-3 text-gray-300">
+                                <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span>virekreach@example.com</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-gray-300">
+                                <svg class="w-4 h-4 text-[#C5A880]" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                                <span>+855 12 345 678</span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Address -->
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-bold text-[#C5A880] tracking-wider uppercase">ADDRESS</h4>
+                            <div class="flex items-start gap-3 text-gray-300">
+                                <svg class="w-4 h-4 text-[#C5A880] mt-1 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/2VBkGcQmcupH2Qqf9" target="_blank"
+                                    rel="noopener noreferrer">National
+                                    University of Management</a>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Social Media -->
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-bold text-[#C5A880] tracking-wider uppercase">SOCIAL MEDIA
+                            </h4>
+                            <p class="text-gray-400 text-xs">Find me on social media below</p>
+                            <div>
+
+                            </div>
+                            <div class="flex gap-4 pt-1 text-gray-300">
+                                <!-- Instagram Button -->
+                                <a href="https://www.instagram.com/yourusername" target="_blank"
+                                    rel="noopener noreferrer" class="hover:text-[#C5A880] transition-colors"
+                                    aria-label="Instagram">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=tGlIfu9SR0Y" target="_blank"
+                                    rel="noopener noreferrer" class="hover:text-[#C5A880] transition-colors"
+                                    aria-label="YouTube">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.facebook.com/virek.reach.2025" target="_blank"
+                                    rel="noopener noreferrer" class="hover:text-[#C5A880] transition-colors"
+                                    aria-label="LinkedIn">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- PROJECTS SECTION -->
+        <section id="experience"
+            class="min-h-screen w-full bg-[#1A1817] flex flex-col justify-center py-24 px-4 lg:px-12 text-white">
+            <div class="max-w-5xl w-full mx-auto space-y-12">
+
+                <!-- Header -->
+                <div class="text-center space-y-2">
+                    <span class="text-[#C5A880] text-xs font-semibold tracking-widest uppercase">MY WORK</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-white">Featured Projects</h2>
+                    <div class="w-16 h-0.5 bg-[#C5A880] mx-auto mt-2"></div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project Card 1: Flutter Mobile App -->
+                    <div
+                        class="bg-[#26221F] border border-[#3D352E] rounded-2xl overflow-hidden shadow-xl hover:border-[#C5A880]/50 transition-all duration-300 flex flex-col group">
+                        <div class="relative h-48 overflow-hidden bg-[#1D1A18]">
+                            <img src="/src/assets/original/Flutter_logo.svg.webp" alt="Flutter Mobile App"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                            <span
+                                class="absolute top-3 right-3 bg-[#1A1817]/80 backdrop-blur-md text-[#C5A880] text-xs font-semibold px-3 py-1 rounded-full border border-[#C5A880]/30">
+                                Flutter / Mobile
+                            </span>
+                        </div>
+                        <div class="p-6 flex flex-col grow justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-bold text-white group-hover:text-[#C5A880] transition-colors">
+                                    Cross-Platform Mobile App</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                                    A high-performance mobile application built with Flutter and Dart, featuring clean
+                                    architecture, custom navigation bars, and platform channels.
+                                </p>
+                            </div>
+
+                            <div class="space-y-4">
+                                <!-- Tech Badges -->
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">Flutter</span>
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">Dart</span>
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">REST
+                                        API</span>
+                                </div>
+
+                                <!-- Links -->
+                                <div class="flex items-center justify-between pt-2 border-t border-[#3D352E]">
+                                    <a href="#"
+                                        class="text-xs text-[#C5A880] hover:underline flex items-center gap-1 font-medium">
+                                        View Details
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-white transition-colors"
+                                        aria-label="GitHub Repository">
+                                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Web POS System -->
+                    <div
+                        class="bg-[#26221F] border border-[#3D352E] rounded-2xl overflow-hidden shadow-xl hover:border-[#C5A880]/50 transition-all duration-300 flex flex-col group">
+                        <div class="relative h-48 overflow-hidden bg-[#1D1A18]">
+                            <img src="/src/assets/original/koi.png" alt="Web POS System"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                            <span
+                                class="absolute top-3 right-3 bg-[#1A1817]/80 backdrop-blur-md text-[#C5A880] text-xs font-semibold px-3 py-1 rounded-full border border-[#C5A880]/30">
+                                Web App
+                            </span>
+                        </div>
+                        <div class="p-6 flex flex-col grow justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-bold text-white group-hover:text-[#C5A880] transition-colors">
+                                    Cafe POS System</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                                    A custom web-based POS solution designed for coffee shops, complete with
+                                    subscription management, inventory tracking, and sales analytics.
+                                </p>
+                            </div>
+
+                            <div class="space-y-4">
+                                <!-- Tech Badges -->
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">HTML/CSS</span>
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">Tailwind</span>
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">JavaScript</span>
+                                </div>
+
+                                <!-- Links -->
+                                <div class="flex items-center justify-between pt-2 border-t border-[#3D352E]">
+                                    <a href="#"
+                                        class="text-xs text-[#C5A880] hover:underline flex items-center gap-1 font-medium">
+                                        View Details
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-white transition-colors"
+                                        aria-label="GitHub Repository">
+                                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: OSPF & Cisco Network Design -->
+                    <div
+                        class="bg-[#26221F] border border-[#3D352E] rounded-2xl overflow-hidden shadow-xl hover:border-[#C5A880]/50 transition-all duration-300 flex flex-col group">
+                        <div class="relative h-48 overflow-hidden bg-[#1D1A18]">
+                            <img src="/src/assets/original/network.jpg" alt="Networking Project"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                            <span
+                                class="absolute top-3 right-3 bg-[#1A1817]/80 backdrop-blur-md text-[#C5A880] text-xs font-semibold px-3 py-1 rounded-full border border-[#C5A880]/30">
+                                Networking
+                            </span>
+                        </div>
+                        <div class="p-6 flex flex-col grow justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-bold text-white group-hover:text-[#C5A880] transition-colors">
+                                    Inter-VLAN & OSPF Architecture</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                                    Configured Inter-VLAN routing, 802.1Q encapsulation, and Single-Area OSPFv2 within
+                                    Cisco Packet Tracer.
+                                </p>
+                            </div>
+
+                            <div class="space-y-4">
+                                <!-- Tech Badges -->
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">Cisco
+                                        CCNA</span>
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">OSPFv2</span>
+                                    <span
+                                        class="bg-[#1A1817] text-gray-300 text-xs px-2.5 py-1 rounded-md border border-[#3D352E]">VLAN</span>
+                                </div>
+
+                                <!-- Links -->
+                                <div class="flex items-center justify-between pt-2 border-t border-[#3D352E]">
+                                    <a href="#"
+                                        class="text-xs text-[#C5A880] hover:underline flex items-center gap-1 font-medium">
+                                        View Details
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-white transition-colors"
+                                        aria-label="GitHub Repository">
+                                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
